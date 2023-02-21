@@ -1,5 +1,11 @@
 # Labelme to YOLO Conversion Tool
 
+```bash
+git clone git@github.com:NatePolizogo/labelme2yolo.git
+cd labelme2yolo
+mkdir configs
+```
+
 ## Produce Yolo Labels
 Convert labelme labels into yolo format based on the task specified.
 ```bash
@@ -13,7 +19,7 @@ python convert.py --datalist <path/to/dataset.txt> --task <detect/segment/classi
 ## Split Dataset
 This script splits all the datasets located inside datasets folder and for each one, a corresponding json file is saved that contains information on how the dataset is splitted.
 ```bash
-python split_datasets.py
+python split.py
 ```
 
 ## Migrate the Dataset using the splitfiles

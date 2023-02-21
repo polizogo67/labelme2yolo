@@ -5,8 +5,7 @@ import os, glob
 import json, csv
 import numpy as np
 
-names = ['meltflow', 'spinner']
-names = ['meltflow', 'spinner', 'slag']
+from app.names import *
 
 def parse_list(filepath:str):
     with open(filepath, 'r') as fp:
@@ -60,8 +59,8 @@ def find_cropbox(shapes):
 
     for shape in shapes:
         # Classname and aliases
-        shape['label'] = shape['label'].replace('melt on spinner', 'spinner').replace(' ','')
-        shape['label'] = shape['label'].replace('spiner', 'spinner')
+        # shape['label'] = shape['label'].replace('melt on spinner', 'spinner').replace(' ','')
+        # shape['label'] = shape['label'].replace('spiner', 'spinner')
         if not shape['label'] in names: continue
         
         match shape['shape_type']:

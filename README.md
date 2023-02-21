@@ -6,6 +6,12 @@ cd labelme2yolo
 mkdir configs
 ```
 
+Edit [names.py](app/names.py) file to contain the class names you want to include.
+Example:
+```python
+names = ['dog', 'cat', 'person']
+```
+
 ## Produce Yolo Labels
 Convert labelme labels into yolo format based on the task specified.
 ```bash
@@ -23,7 +29,6 @@ python split.py
 ```
 
 ## Migrate the Dataset using the splitfiles
-
 ```bash
 python migrate.py --datasets datalist.txt
-```#
+```

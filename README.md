@@ -1,5 +1,7 @@
 # Labelme to YOLO Conversion Tool
 
+The tool support YoloV5, YoloV8 detection and segmentation datasets
+
 ```bash
 git clone git@github.com:NatePolizogo/labelme2yolo.git
 cd labelme2yolo

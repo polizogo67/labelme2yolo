@@ -1,1 +1,1 @@
-names = ['meltflow', 'spinner', 'slag']
+names = ['person', 'dog', 'bike']
